@@ -16,28 +16,41 @@ echo "vandaag is het: $today";
 
 echo "<br>";
 
-$yearday = date ("z");
+$yearday = date ("z")+1;
 echo "vandaag is het de $yearday dag";
 
 echo "<br>";
 
-$weekday = date ("w");
- echo "het is de $weekday van deze week";
+$monday = date ("l");
+$day = date ("w");
+echo"$monday is de $day ste dag van de week";
+
 
  echo "<br>";
 
-
+ $month = date ("F");
  $monthdays = date ("t");
- echo "er zitten $monthdays in maart";
+ echo "er zitten $monthdays in $month";
 
 echo "<br>";
 
-$year = date ("L");
 
-$var1 = "wel";
-$var2 = "geen";
+$year = date("Y");
+$whatYear = date("L");
 
-echo "2024 is een $var1 een schrikkeljaar";
+
+
+echo "$year is een";
+if (
+    $whatYear ==1
+    )
+    {
+        echo "schrikkeljaar";
+    }
+
+    else {
+        echo "geen schrikkeljaar";
+        }
 
 ?>
 
