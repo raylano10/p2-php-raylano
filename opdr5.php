@@ -6,8 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+<?php    
 
+$nummer = 25; 
 
+if 
+($nummer % 2 == 0)
+ { 
+    echo "Is het $nummer1 even? jup"; 
+ } 
+
+else 
+{ 
+    echo "is het $nummer even? NEIN!!"; 
+}
+
+?>
 </body>
 </html>
